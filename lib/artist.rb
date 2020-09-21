@@ -42,6 +42,13 @@ class Artist
     songs.each { |song| add_song(song) }
   end
 
+def add_song(song)
+    @songs << song
+    song.artist = self
+@@ -36,8 +30,4 @@ def add_songs(songs)
+    songs.each { |song| add_song(song) }
+  end
+
   def to_param
     name.downcase.gsub(' ', '-')
   end
