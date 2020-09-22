@@ -7,7 +7,6 @@ class Song
   include Memorable::InstanceMethods
   include Paramable::InstanceMethods
   
-  
   attr_accessor :name
   attr_reader :artist
 
